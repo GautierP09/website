@@ -2,8 +2,10 @@ language: node_js
 node_js:
 - '12'
 - '14'
-services:
-- redis-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: cfccd95c-8b12-4397-adc0-cc9a09050a89
 script:
 - echo 'Starting'
 - npm install
