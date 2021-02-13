@@ -7,3 +7,12 @@ script:
 - npm install
 - echo 'Testing'
 - npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: VpQfFyP3dnEK/Uvr2VP74aoqwI1oYY1yKX7HHkACeJm4ujg+Mr7qAHZn3ueSttfo2aRqJpfk33AXbiULJS+vw/REsb0fGL43VuL4sexsQRvCbrr/XBm64TRjT/d6wbAgkdQMx0rdmPusbVj96iR1yHCti26ecLhGmEL7PKKmcwchugiX4+Y+5PafdR0PKcI6EHacXfXhz8KShhbTPSPFXMvEi+ww9YSdEf8gYXHWx8OwQX3QUhoAO+cJBWhl/Unus+Z7avYCzFw+VGGywlNK2Kb9KQwtB8pg/dsG0vN9umGWTCBM6T7UCicKSsDV7tR3FckbuKLjojB3hU6dUv0iSN36cOYlcYezNvqQJCQ6fSpFcZbrWRe5j3ppaH3RmIuWaNY9xG//9FcSiJqjN6/J7ExwdX8KHN5CHkz4y2I/L1Qu0JOJ8GVFlw4Us+3G0a96qfqliLEToVDTMq3DN0PCH3F2zOkbg2l51HTn0BwGqEDlgHFwg7l1vES74EMZ1CgrnojWmfWC7xTNlZa0SREPjDgEr9jtu4zDdSNsP5sl9t7D3SKZoR2Rp9/JNQnzo4UkhMqPU3tBbPh2/u252gtz3i5jWUpKuv+UhWkiZmCexUDUSw5oFjgruGpMYK+AAd7WsPAdkjSq7v/Mr10P5tdevVczWoLvtZGHVvJbZUxJBxE=
+  app: website
+  on:
+    repo: GautierP09/website
+    branch: main
+  skip_cleanup: 'true'
