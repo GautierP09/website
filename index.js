@@ -5,7 +5,7 @@ let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
-	res.send('<h1>Bienvenue sur le site de Gautier</h1>')
+	res.send('<h1>Bienvenue sur le site de Gautier Plante</h1>')
 })
 
 app.listen(process.env.PORT, function(){
