@@ -1,11 +1,12 @@
 let express  = require('express');
 let app = express();
 let bodyParser = require('body-parser');
+const index = require('./index.html');
 
 app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
-	res.send('<h1>Bienvenue sur le site de Gautier Plante</h1>')
+	res.send(index)
 })
 
 app.listen(process.env.PORT, function(){
